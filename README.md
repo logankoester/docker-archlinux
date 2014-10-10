@@ -2,6 +2,8 @@
 
 > A fully updated Arch Linux base image built from `base/archlinux`
 
+[![Arch Linux](https://raw.githubusercontent.com/logankoester/docker-archlinux/master/logo.png)](http://archlinux.org)
+
 [![DockerCI](http://dockeri.co/image/logankoester/archlinux)](https://registry.hub.docker.com/u/logankoester/archlinux/)
 
 ## Install
