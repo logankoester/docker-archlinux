@@ -6,6 +6,4 @@
 FROM base/archlinux
 MAINTAINER Logan Koester <logan@logankoester.com>
 
-RUN pacman -Syyu --noprogressbar --noconfirm
-
-ENTRYPOINT ["/usr/bin/bash"]
+ONBUILD RUN pacman -Syyu --noprogressbar --noconfirm
