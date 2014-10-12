@@ -1,5 +1,7 @@
 # docker-archlinux
 
+[![Docker Repository on Quay.io](https://quay.io/repository/logankoester/archlinux/status "Docker Repository on Quay.io")](https://quay.io/repository/logankoester/archlinux)
+
 > A fully updated Arch Linux base image built from `base/archlinux`
 
 [![Arch Linux](https://raw.githubusercontent.com/logankoester/docker-archlinux/master/logo.png)](http://archlinux.org)
