@@ -6,6 +6,7 @@
 FROM base/archlinux
 MAINTAINER Logan Koester <logan@logankoester.com>
 
-ONBUILD RUN pacman -Syyu --noprogressbar --noconfirm && \
-  pacman -S pacman --noconfirm && \
-  pacman-db-upgrade
+ONBUILD RUN pacman -Sy --noprogressbar --noconfirm && \
+  pacman -S pacman --noprogressbar --noconfirm && \
+  pacman-db-upgrade && \
+  pacman -Syyu --noprogressbar --noconfirm
