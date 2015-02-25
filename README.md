@@ -8,6 +8,8 @@
 
 [![DockerCI](http://dockeri.co/image/logankoester/archlinux)](https://registry.hub.docker.com/u/logankoester/archlinux/)
 
+The pacman mirrorlist is populated by https://www.archlinux.org/mirrorlist/ (all/https/ipv6/by status).
+
 ## Install
 
 Pull this image with `docker pull logankoester/archlinux`.
@@ -18,4 +20,4 @@ In your Dockerfile, include the line `FROM logankoester/archlinux`. All system p
 
 ## License
 
-Copyright (c) 2013-2014 Logan Koester. Released under the MIT license. See `LICENSE` file for details.
+Copyright (c) 2014-2015 Logan Koester. Released under the MIT license. See `LICENSE` file for details.
