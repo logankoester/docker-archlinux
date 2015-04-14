@@ -14,4 +14,5 @@ ONBUILD RUN pacman-key --refresh-keys && \
   pacman -S --force openssl --noconfirm && \
   pacman -S pacman --noprogressbar --noconfirm && \
   pacman-db-upgrade && \
-  pacman -Syyu --noprogressbar --noconfirm
+  pacman -Syyu --noprogressbar --noconfirm && \
+  pacman -Scc --noconfirm
