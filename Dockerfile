@@ -1,5 +1,5 @@
 # archlinux-chef
-# VERSION 0.1.2
+# VERSION 0.1.3
 #
 # A fully updated Arch Linux base image
 
@@ -12,4 +12,5 @@ RUN curl -o /etc/pacman.d/mirrorlist "https://www.archlinux.org/mirrorlist/?coun
 ONBUILD RUN pacman -Sy --noprogressbar --noconfirm && \
   pacman -S pacman --noprogressbar --noconfirm && \
   pacman-db-upgrade && \
-  pacman -Syyu --noprogressbar --noconfirm
+  pacman -Syyu --noprogressbar --noconfirm && \
+  pacman-key --refresh-keys
