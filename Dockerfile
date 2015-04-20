@@ -15,4 +15,6 @@ ONBUILD RUN pacman-key --refresh-keys && \
   pacman -S pacman --noprogressbar --noconfirm && \
   pacman-db-upgrade && \
   pacman -Syyu --noprogressbar --noconfirm && \
-  pacman -Scc --noconfirm
+  pacman -Scc --noconfirm && \
+  rm -rf /usr/share/man/*
+
