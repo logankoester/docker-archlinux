@@ -1,4 +1,4 @@
-# archlinux-chef
+# archlinux
 # VERSION 0.1.5
 #
 # A fully updated Arch Linux base image
@@ -10,7 +10,7 @@ RUN curl -o /etc/pacman.d/mirrorlist "https://www.archlinux.org/mirrorlist/?coun
   sed -i 's/^#//' /etc/pacman.d/mirrorlist
 
 ONBUILD RUN pacman-key --refresh-keys && \
-  pacman -S --force openssl && \
+  pacman -S --force openssl --noconfirm && \
   pacman -Sy --noprogressbar --noconfirm && \
   pacman -S pacman --noprogressbar --noconfirm && \
   pacman-db-upgrade && \
