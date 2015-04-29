@@ -1,5 +1,5 @@
 # archlinux
-# VERSION 0.1.5
+# VERSION 0.1.6
 #
 # A fully updated Arch Linux base image
 
