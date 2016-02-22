@@ -15,4 +15,7 @@ ONBUILD RUN pacman-key --populate && \
   pacman -S --force openssl --noconfirm && \
   pacman -S pacman --noprogressbar --noconfirm && \
   pacman-db-upgrade && \
-  pacman -Syyu --noprogressbar --noconfirm
+  pacman -Syyu --noprogressbar --noconfirm && \
+  pacman -Scc --noconfirm && \
+  rm -rf /usr/share/man/*
+
